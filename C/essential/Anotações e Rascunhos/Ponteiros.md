@@ -2,6 +2,8 @@
 
 Um ponteiro é um tipo de dado que armazena um endereço de memória de uma outra variável. 
 
+Apontar para uma variável ***x*** significa: "possui/armazena" o endereço de memória da variável ***x***.
+
 Toda ponteiro, (i.e, endereço de memória) ocupa 8 Bytes de memória, ao menos nas arquiteturas mais atuais de computadores.
 
 Declaramos variáveis ponteiros utilizando asteriscos (*).

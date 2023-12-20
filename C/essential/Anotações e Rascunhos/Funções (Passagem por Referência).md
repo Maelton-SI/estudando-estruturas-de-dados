@@ -12,7 +12,7 @@ int a = 10;
 int b = 20;
 int c;
 
-soma(a,b,c);
+soma(a,b, &c);
 ```
 
 ![](images/passagem-por-referencia.png)
