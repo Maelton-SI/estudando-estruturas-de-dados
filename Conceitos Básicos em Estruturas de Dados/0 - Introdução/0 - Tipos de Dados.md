@@ -20,12 +20,14 @@ Os tipos complexos de dados podem armazenar valores de tipos diferentes, mas nor
 
 # Tipo Abstrato de Dados
 
-Um tipo abstrato representa algo do mundo real, suas características relevantes e operações.
+Um tipo abstrato representa algo do mundo real, especifica suas características relevantes e sua interface (conjunto de operações do tipo abstrato de dados).
 
 Classes em programação orientada a objetos são um exemplo de tipos abstratos de dados.
 
 # Tipo Concreto de Dados
 
 Um tipo concreto de dados é a implementação no código (utilizando uma linguagem de programação) de um tipo abstrato de dados.
+
+Uma implementação é o conjunto de algorítmos que define as características especificadas pelo tipo abstrato de dados e realiza as operações da interface desse tipo.
 
 Implementações de estruturas de dados tais como, Pilhas, Filas e Listas Encadeadas são bons exemplos disso.

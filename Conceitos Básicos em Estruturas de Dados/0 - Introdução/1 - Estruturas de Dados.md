@@ -8,11 +8,15 @@ As estruturas de dados são implementações concretas de tipos de dados abstrat
 
 **Keywords:** ***estruturas de dados***, [***implementações concretas***](./Tipos%20de%20Dados.md), [***tipos de dados abstratos.***](./Tipos%20de%20Dados.md)
 
-# Exemplos de Estruturas de Dados
+# Exemplo de Estrutura de Dados
 
 ## Array (Vetor)
 
 "Um vetor é a estrutura de armazenamento de dados mais comumente usada; é predefinida na maioria das linguagens de programação." (Lafore, 2004)
+
+É uma estrutura de dados linear, ou seja, seus elementos são armazenados em ordem sequencial, de modo que cada elemento tem um antecessor e um sucessor, com exceção do primeiro e último elemento, que possuem apenas um sucessor e um único antecessor respectivamente.
+
+Um array representa uma sequência linear de elementos.
 
 ### Principais funcionalidades:
 
@@ -30,4 +34,4 @@ As estruturas de dados são implementações concretas de tipos de dados abstrat
         * Pesquisar elemento: **M(*n/2*)**, **O(*n*)**
         * Remanejamento dos elementos no array:  **M(*n/2*)**, **O(*n*)**
 
-* Tamanho (quantidade de elementos) do array: **O(*1*)**
+* Retornar o tamanho (quantidade de elementos) do array: **O(*1*)**
