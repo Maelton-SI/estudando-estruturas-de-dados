@@ -20,7 +20,7 @@ Os tipos complexos de dados podem armazenar valores de tipos diferentes, mas nor
 
 # Tipo Abstrato de Dados
 
-Um tipo abstrato representa algo do mundo real.
+Um tipo abstrato representa algo do mundo real, suas características relevantes e operações.
 
 Classes em programação orientada a objetos são um exemplo de tipos abstratos de dados.
 
