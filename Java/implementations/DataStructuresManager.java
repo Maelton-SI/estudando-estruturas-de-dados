@@ -5,9 +5,10 @@ public class DataStructuresManager {
 
     public static void main(String[] args) {
 
-        AbstractDataTypeStack myStack = new StaticStackWithArray(10);
+        AbstractDataTypeStack<Object> myStack = new StaticStackWithArray<Object>(10);
 
         myStack.push(2024);
-        System.out.println(myStack.peek());
+        myStack.push("Felpa");
+        System.out.print(myStack.peek());
     }
 }
