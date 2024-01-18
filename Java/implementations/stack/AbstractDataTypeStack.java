@@ -1,10 +1,10 @@
 package stack;
 
-public interface AbstractDataTypeStack {
+public interface AbstractDataTypeStack<T> {
 
     boolean isEmpty();
     boolean isFull();
-    void push(Object element);
-    Object pop();
-    Object peek();
+    void push(T elemento);
+    T pop();
+    T peek();
 }

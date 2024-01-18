@@ -1,6 +1,6 @@
 package stack;
 
-public class StaticStackWithArray implements AbstractDataTypeStack{
+public class StaticStackWithArray<T> implements AbstractDataTypeStack<T> {
     
     private Object[] storage;
     private int storageCapacity;
@@ -14,26 +14,28 @@ public class StaticStackWithArray implements AbstractDataTypeStack{
         return this.size == 0 ? true : false;
     }
 
-    public void push(Object element) {
+    public void push(T element) {
         if( !this.isFull() ) {
             this.storage[this.size] = element;
             this.size++;
         }
     }
 
-    public Object pop() {
+    @SuppressWarnings("unchecked")
+    public T pop() {
         if(this.isEmpty()) {
             return null;
         } else {
-            Object peekElement = this.storage[this.size-1];
+            T peekElement = (T) this.storage[this.size-1];
             this.storage[this.size-1] = null;
             this.size--;
             return peekElement;
         }
     }
 
-    public Object peek() {
-        return this.isEmpty() ? null : this.storage[this.size-1];
+    @SuppressWarnings("unchecked")
+    public T peek() {
+        return this.isEmpty() ? null : (T) this.storage[this.size-1];
     }
 
     public StaticStackWithArray(int storageCapacity) {
