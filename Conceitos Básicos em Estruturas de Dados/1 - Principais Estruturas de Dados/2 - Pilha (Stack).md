@@ -10,7 +10,7 @@ Como em uma caixa profunda de livros, para ter acesso ao ultimo livro no fundo d
 
 ## Interface de Operações
 
-### push()
+### push(element)
 
 Insere um elemento no topo (ultimo espaço de armazenamento disponível) da pilha.
 
@@ -63,5 +63,7 @@ Uma das maneiras possíveis de implementar pilhas dinâmicas é utilizando lista
 ## Referências
 
 * Estruturas de Dados e Algorítmos em Java (Tradução da 2ª Edição) - Robert Lafore
+
 * Estrutura de Dados e Algorítmos em C++ (Tradução da 4ª Edição norte americana) - Adam Drozdek
+
 * [Stack in C - Scaler Topics](https://www.scaler.com/topics/stack-in-c/)
