@@ -2,9 +2,9 @@ package stack;
 
 public interface AbstractDataTypeStack<T> {
 
-    boolean isEmpty();
     boolean isFull();
-    void push(T elemento);
+    boolean isEmpty();
+    void push(T element);
     T pop();
     T peek();
 }
