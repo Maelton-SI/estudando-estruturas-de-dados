@@ -5,15 +5,18 @@ public class StaticStackWithArray<T> implements AbstractDataTypeStack<T> {
     private Object[] storage;
     private int storageCapacity;
     private int size;
-
+    
+    @Override
     public boolean isFull() {
         return this.size == this.storageCapacity ? true : false;
     }
 
+    @Override
     public boolean isEmpty() {
         return this.size == 0 ? true : false;
     }
 
+    @Override
     public void push(T element) {
         if( !this.isFull() ) {
             this.storage[this.size] = element;
@@ -21,6 +24,7 @@ public class StaticStackWithArray<T> implements AbstractDataTypeStack<T> {
         }
     }
 
+    @Override
     @SuppressWarnings("unchecked")
     public T pop() {
         if(this.isEmpty()) {
@@ -33,6 +37,7 @@ public class StaticStackWithArray<T> implements AbstractDataTypeStack<T> {
         }
     }
 
+    @Override
     @SuppressWarnings("unchecked")
     public T peek() {
         return this.isEmpty() ? null : (T) this.storage[this.size-1];

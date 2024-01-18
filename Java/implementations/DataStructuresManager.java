@@ -1,14 +1,15 @@
 import stack.AbstractDataTypeStack;
-import stack.StaticStackWithArray;
+import stack.DynamicStackWithArray;
 
 public class DataStructuresManager {
 
     public static void main(String[] args) {
 
-        AbstractDataTypeStack<Object> myStack = new StaticStackWithArray<Object>(10);
+        AbstractDataTypeStack<Object> myStack = new DynamicStackWithArray<Object>();
 
-        myStack.push(2024);
-        myStack.push("Felpa");
-        System.out.print(myStack.peek());
+        for(short n = 1; n < 1001; n++) myStack.push(n);
+
+        System.out.println(myStack.peek());
+
     }
 }
