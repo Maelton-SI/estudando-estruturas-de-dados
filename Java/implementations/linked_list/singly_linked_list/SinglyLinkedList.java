@@ -155,12 +155,11 @@ public class SinglyLinkedList<T> implements AbstractDataTypeLinkedList<T> {
         Node<T> removedNode = null;
 
         if( this.isEmpty() ) {
-            return null;
+            return removedNode;
         } else if( index < 0) {
             
             if( (index * -1) > this.size()) {
-                System.out.println(this.size());
-                return null;
+                return removedNode;
             } else {
                 int removalIndex = this.size() + index;
 
@@ -182,7 +181,7 @@ public class SinglyLinkedList<T> implements AbstractDataTypeLinkedList<T> {
             }
         } else if(index > 0){
             if( index >= this.size() ) {
-                return null;
+                return removedNode;
             } else {
                 for(int i = 0; i < (index - 1); i++) {
                     previousNode = previousNode.getNext();
@@ -217,7 +216,7 @@ public class SinglyLinkedList<T> implements AbstractDataTypeLinkedList<T> {
     }
 
     @Override
-    public boolean search(T element) {
+    public boolean contains(T element) {
         Node<T> currentNode = this.head;
         
         for(int index = 0; index < this.size(); index++) {
@@ -230,6 +229,42 @@ public class SinglyLinkedList<T> implements AbstractDataTypeLinkedList<T> {
 
         return false;
     }
+
+    @Override
+    public Node<T> search(int index) {
+        Node<T> foundNode = this.head;
+
+        if( this.isEmpty() ) {
+            foundNode = null;
+            return foundNode;
+        } else if( index < 0) {
+            
+            if( (index * -1) > this.size()) {
+                foundNode = null;
+                return foundNode;
+            } else {
+                int nodeIndex = this.size() + index;
+
+                for(int i = 1; i <= nodeIndex; i++) {
+                    foundNode = foundNode.getNext();
+                }
+                return foundNode;
+              }
+        } else if(index > 0) {
+                if( index >= this.size() ) {
+                    foundNode = null;
+                    return foundNode;
+                } else {
+                    for(int i = 1; i <= index; i++) {
+                        foundNode = foundNode.getNext();
+                    }
+                    return foundNode;
+                }
+            } else {
+                foundNode = this.head;
+                return foundNode;
+            }
+        }
 
     public String toString() {
         if( this.isEmpty() ) {
