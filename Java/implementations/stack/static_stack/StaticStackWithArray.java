@@ -1,4 +1,6 @@
-package stack;
+package stack.static_stack;
+
+import stack.AbstractDataTypeStack;
 
 public class StaticStackWithArray<T> implements AbstractDataTypeStack<T> {
     
