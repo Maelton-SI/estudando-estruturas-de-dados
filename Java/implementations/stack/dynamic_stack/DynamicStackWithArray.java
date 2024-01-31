@@ -1,4 +1,6 @@
-package stack;
+package stack.dynamic_stack;
+
+import stack.AbstractDataTypeStack;
 
 public class DynamicStackWithArray<T> implements AbstractDataTypeStack<T> {
 
