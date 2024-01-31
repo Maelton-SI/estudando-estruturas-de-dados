@@ -17,7 +17,8 @@ public interface AbstractDataTypeLinkedList<T> {
     int size();
     void clear();
 
-    boolean search(T element);
+    boolean contains(T element);
+    Node<T> search(int index);
 
     String toString();
 }

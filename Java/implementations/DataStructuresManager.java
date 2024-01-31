@@ -1,10 +1,10 @@
-import linked_list.AbstractDataTypeLinkedList;
-import linked_list.singly_linked_list.SinglyLinkedList;
+import stack.AbstractDataTypeStack;
+import stack.dynamic_stack.DynamicStackWithSinglyLinkedList;
 
 public class DataStructuresManager {
 
     public static void main(String[] args) {
 
-        AbstractDataTypeLinkedList<String> myLinkedList = new SinglyLinkedList<String>();
+        AbstractDataTypeStack<Object> myStack = new DynamicStackWithSinglyLinkedList<Object>();
     }
 }
